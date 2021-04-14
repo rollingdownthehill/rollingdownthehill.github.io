@@ -9,6 +9,17 @@
 		<title>rollingdownthehill.net</title>
 		<meta name="Author" content="Michael Seh">
 		<meta name="Description" content="Michael Seh, artist, rolling down the hill">
+		
+		<style type="text/css"/>
+		[data-component="slideshow"] .slide {
+	display: none;
+  text-align: center;
+}
+
+[data-component="slideshow"] .slide.active {
+	display: block;
+}
+		</style>
 		<script type="text/javascript">
 		var slideshows = document.querySelectorAll('[data-component="slideshow"]');
 slideshows.forEach(initSlideShow);
