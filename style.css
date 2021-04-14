@@ -17,7 +17,7 @@ body {
 
 .photo {
   position: absolute;
-  animation: round 16s infinite;
+  animation: round 25s infinite;
   opacity: 0;
 }
 
