@@ -1,68 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Image Slideshow in HTML Example</title>
-
-    <meta name="author" content="Codeconvey" />
-    <!-- Image Slideshow CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!--Only for demo purpose - no need to add.-->
-    <link rel="stylesheet" href="demo.css" />
-	
+  <title>HTML and CSS Slideshow</title>
+  <style>
+    body {
+      font-family: Helvetica, sans-serif;
+      padding: 5%;
+      text-align: center;
+      font-size: 50;
+    }
+  
+    /* Styling the area of the slides */
+    #slideshow {
+      overflow: hidden;
+      height: 510px;
+      width: 728px;
+      margin: 0 auto;
+    }
+  
+    /* Style each of the sides 
+    with a fixed width and height */
+    .slide {
+      float: left;
+      height: 510px;
+      width: 728px;
+    }
+  
+    /* Add animation to the slides */
+    .slide-wrapper {
+  
+      /* Calculate the total width on the
+      basis of number of slides */
+      width: calc(728px * 4);
+        
+      /* Specify the animation with the
+      duration and speed */
+      animation: slide 10s ease infinite;
+    }
+  
+    /* Set the background color
+    of each of the slides */
+    .slide:nth-child(1) {
+      background: green;
+    }
+  
+    .slide:nth-child(2) {
+      background: pink;
+    }
+  
+    .slide:nth-child(3) {
+      background: red;
+    }
+  
+    .slide:nth-child(4) {
+      background: yellow;
+    }
+  
+    /* Define the animation 
+    for the slideshow */
+    @keyframes slide {
+  
+      /* Calculate the margin-left for 
+      each of the slides */
+      20% {
+        margin-left: 0px;
+      }
+  
+      40% {
+        margin-left: calc(-728px * 1);
+      }
+  
+      60% {
+        margin-left: calc(-728px * 2);
+      }
+  
+      80% {
+        margin-left: calc(-728px * 3);
+      }
+    }
+  </style>
 </head>
 <body>
-		
-<div class="ScriptTop">
-    <div class="rt-container">
-        <div class="col-rt-4" id="float-right">
- 
-            <!-- Ad Here -->
-            
-        </div>
-        <div class="col-rt-2">
-            <ul>
-                <li><a href="https://codeconvey.com/simple-image-slideshow-in-html" title="Back to tutorial page">Back to Tutorial</a></li>
-            </ul>
-        </div>
+  
+  <!-- Define the slideshow container -->
+  <div id="slideshow">
+    <div class="slide-wrapper">
+  
+      <!-- Define each of the slides
+         and write the content -->
+      <div class="slide">
+        <h1 class="slide-number">
+          GeeksforGeeks
+        </h1>
+      </div>
+      <div class="slide">
+        <h1 class="slide-number">
+          A computer science portal
+        </h1>
+      </div>
+      <div class="slide">
+        <h1 class="slide-number">
+          This is an example of
+        </h1>
+      </div>
+      <div class="slide">
+        <h1 class="slide-number">
+          Slideshow with HTML and CSS only
+        </h1>
+      </div>
     </div>
-</div>
-
-<header class="ScriptHeader">
-    <div class="rt-container">
-    	<div class="col-rt-12">
-        	<div class="rt-heading">
-            	<h1>Image Slideshow in HTML Example</h1>
-                <p>A simaple image slideshow in HTML and CSS with fadding effect.</p>
-            </div>
-        </div>
-    </div>
-</header>
-
-<section>
-    <div class="rt-container">
-          <div class="col-rt-12">
-              <div class="Scriptcontent">
-              
- <!-- partial:index.partial.html -->
-<div class="container">
-  <img class='photo'  src="img/8113424031_72048dd887.jpg" alt="Image 1" />
-  <img class='photo'  src="img/8562523343_9bb49b7b7b.jpg" alt="Image 2" />
-  <img class='photo'  src="img/8562729616_35b1384aa1.jpg" alt="Image 3" />
-  <img class='photo'  src="img/8113424031_72048dd887.jpg" alt="Image 4" />
-
-</div>
-<!-- partial -->
-    		</div>
-		</div>
-    </div>
-</section>
-     
-
-
-    <!-- Analytics -->
-
-	</body>
+  </div>
+</body>
 </html>
