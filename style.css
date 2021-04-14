@@ -14,9 +14,3 @@ body {
   border-right-color: #5d4426;
   position: relative;
 }
-
-.photo {
-  position: absolute;
-  animation: round 15s infinite;
-  opacity: 0;
-}
