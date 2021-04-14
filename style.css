@@ -17,7 +17,7 @@ body {
 
 .photo {
   position: absolute;
-  animation: round 25s infinite;
+  animation: round 15s infinite;
   opacity: 0;
 }
 
@@ -30,13 +30,13 @@ body {
   }
 }
 img:nth-child(1) {
-  animation-delay: 15s;
+  animation-delay: 0s;
 }
 
 img:nth-child(2) {
-  animation-delay: 10s;
+  animation-delay: 0s
 }
 
 img:nth-child(3) {
-  animation-delay: 5s;
+  animation-delay: 0s
 }
