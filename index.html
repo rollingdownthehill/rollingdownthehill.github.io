@@ -1,52 +1,291 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-    <meta name="viewport" content="width=device-width, initial-scale=.5, user-scalable=no"> 
-    <title>rollingdownthehill.net</title>
+  <title>KEVIN REUNING | ART</title>
+  <meta name="description" content="the art of artist kevin reuning">
+  <meta name="keywords" content="kevin, reuning, art, kevin reuning, artist, microscope gallery">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box; cursor: url(https://s3.us-east-2.amazonaws.com/coolkev.net/TWO_FINGERS.png), auto!important; 
+      }
+body {font-family: Verdana,sans-serif;
+      cursor: url(https://s3.us-east-2.amazonaws.com/coolkev.net/TWO_FINGERS.png), auto!important;
+      background-color: #7f7f7f;
+    }
 
-    <meta name="author" content="Michael Seh" />
-    <!-- Image Slideshow CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!--Only for demo purpose - no need to add.-->
-    <link rel="stylesheet" href="demo.css" />
-	
+.site_header {
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 0px;
+  text-rendering: optimizeLegibility;
+  text-align: left;
+  margin-left: 40px;
+  z-index: 99;
+  position: absolute;
+  cursor: url(https://s3.us-east-2.amazonaws.com/coolkev.net/TWO_FINGERS.png), auto!important;
+
+}
+
+/**
+ * Header image
+ */
+
+.header_image {
+  text-align: left;
+  z-index: -1;
+ 
+    margin-bottom: 0px;
+     cursor: url(https://s3.us-east-2.amazonaws.com/coolkev.net/TWO_FINGERS.png), auto!important;
+
+     filter: blur(2.5px);
+  -webkit-filter: blur(2.5px);
+
+}
+
+.header_image img {
+  border: 0;
+ cursor: url(https://s3.us-east-2.amazonaws.com/coolkev.net/TWO_FINGERS.png), auto!important;
+
+ filter: blur(2.5px);
+  -webkit-filter: blur(2.5px);
+}
+
+/*myslides define*/
+.mySlides {display:none; cursor: url(https://s3.us-east-2.amazonaws.com/coolkev.net/TWO_FINGERS.png), auto!important; margin-top: 80px;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 1000px;
+  height: 1000px;
+  position: relative;
+  text-align: center;
+  margin-top: 80px; 
+  margin: auto;
+  cursor: url(https://s3.us-east-2.amazonaws.com/coolkev.net/TWO_FINGERS.png), auto!important;
+
+}
+
+#listing {
+  display: none;
+  cursor: url(https://s3.us-east-2.amazonaws.com/coolkev.net/TWO_FINGERS.png), auto!important;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #0000ff;
+  font-family: sans-serif;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold; 
+  cursor: url(https://s3.us-east-2.amazonaws.com/coolkev.net/TWO_FINGERS.png), auto!important;
+}
+
+
+.active {
+  background-color: #717171;
+  cursor: url(https://s3.us-east-2.amazonaws.com/coolkev.net/TWO_FINGERS.png), auto!important;
+
+}
+
+.overlay {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #7f7f7f;
+}
+
+.slideshow-container:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: blue;
+  font-size: 18px;
+  font-family: sans-serif;
+  position: relative;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
 </head>
 <body>
+<div class="site_header">
+  <div class="header_image">
+  <img src="https://s3.us-east-2.amazonaws.com/coolkev.net/header/kev.png" height="273" width="506"/>
+  </div>
+  </div>
+</div>
 
-<header class="ScriptHeader">
-    <div class="rt-container">
-    	<div class="col-rt-12">
-        	<div class="rt-heading">
-            	<h1>Appointments are for 30 minutes.</h1>
-                <p>email to:<br> michael [at] rollingdownthehill [dot] net</p>
-            </div>
-        </div>
-    </div>
-</header>
 
-<section>
-    <div class="rt-container">
-          <div class="col-rt-12">
-              <div class="Scriptcontent">
-              
- <!-- partial:index.partial.html -->
-<div class="container">
-  <img class='photo'  src="8113424031_72048dd887.jpg" alt="Image 1" />
-  <img class='photo'  src="8562523343_9bb49b7b7b.jpg" alt="Image 2" />
-  <img class='photo'  src="8562729616_35b1384aa1.jpg" alt="Image 3" />
 
 </div>
-<!-- partial -->
-    		</div>
-		</div>
-    </div>
-</section>
-     
+</div>
 
 
-    <!-- Analytics -->
+<div id="listing"></div>
+<div class="slideshow-container">
+    <div class="overlay">
+    <div class="text"><b>KEVIN REUNING IS AN ARTIST <br>
+    	<br>kev@coolkev.net<br>
+    	<br>info@microscopegallery.com<br><br>
+    	<br><br>WEB PROJECTS<br>
+    	<a href="http://kr-18-fl01-al-v01-gm.net/" target="_blank">http://kr-18-fl01-al-v01-gm.net/</a>
+      <br>
+      <a href="http://kr-18-fl02-h4k-v01-test.net/" target="_blank">http://kr-18-fl02-h4k-v01-test.net/</a>
+    </b></div>
+  </div>
 
-	</body>
-</html>
+
+<!-- <div class="mySlides fade">
+  <img src="jelle_cube_update_5_22_18684.png" style="width:100%">
+  <div class="numbertext">1 / 11</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="jelle_cube_update_5_22_18685.png" style="width:100%">
+  <div class="numbertext">2 / 11</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="jelle_cube_update_5_22_18686.png" style="width:100%">
+  <div class="numbertext">3 / 11</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="jelle_cube_update_5_22_18687.png" style="width:100%">
+  <div class="numbertext">4 / 11</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="jelle_cube_update_5_22_18688.png" style="width:100%">
+  <div class="numbertext">5 / 11</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="jelle_cube_update_5_22_18689.png" style="width:100%">
+  <div class="numbertext">6 / 11</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="jelle_cube_update_5_22_18690.png" style="width:100%">
+  <div class="numbertext">7 / 11</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="jelle_cube_update_5_22_18691.png" style="width:100%">
+  <div class="numbertext">8 / 11</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="jelle_cube_update_5_22_18692.png" style="width:100%">
+  <div class="numbertext">9 / 11</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="jelle_cube_update_5_22_18693.png" style="width:100%">
+  <div class="numbertext">10 / 11</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="jelle_cube_update_5_22_18694.png" style="width:100%">
+  <div class="numbertext">11 / 11</div>
+</div> -->
+
+</div>
+<br>
+
+<div class='dot-container' style="text-align:center">
+<!--   <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>  
+  <span class="dot"></span> 
+  <span class="dot"></span>  -->
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+  var S3BL_IGNORE_PATH = false;
+  // var BUCKET_NAME = 'coolkev.net';
+  var BUCKET_URL = 'http://coolkev.net.s3.amazonaws.com';
+  var S3B_ROOT_DIR = '';//SUBDIR_L2/';
+  var S3B_SORT = 'OLD2NEW';
+  var EXCLUDE_FILE = 'index.html';
+  var EXCLUDE_FILE = 'header/';
+  var EXCLUDE_FILE = 'TWO_FINGERS.png';
+  // var AUTO_TITLE = true;
+  // var S3_REGION = 's3'; // for us-east-1
+</script>
+<script type="text/javascript" src="https://rawgit.com/rufuspollock/s3-bucket-listing/gh-pages/list.js"></script>
+<script>
+var slideIndex = 0;
+
+function appendSlides() {
+  return new Promise(function(res, rej) {
+    var files = document.querySelectorAll('#listing a');
+    files.forEach(function(d, i) {
+      $('.slideshow-container')
+      .append('<div class="mySlides fade"><img src="' + d.href + '" style="width: 100%, max-height: 800px, position: center, margin-top: 40px; "></div>')
+      $('.dot-container').append('<span class="dot"></span>');
+    })
+    res('worked')
+  })
+}
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 50); // Change image every 2 seconds
+
+
+}
+
+
+function main() {
+  appendSlides()
+    .then(showSlides)
+}
+
+$(document).ready(function() {
+  setTimeout(function() {
+    main();
+  }, 500)
+})
+
+
+</script>
+
+</body>
+</html> 
