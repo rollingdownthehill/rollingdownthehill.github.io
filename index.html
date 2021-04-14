@@ -146,13 +146,30 @@ body {font-family: Verdana,sans-serif;
     </b></div>
   </div>
 
-
-<div class="mySlides fade">
-  <img src="https://raw.githubusercontent.com/rollingdownthehill/rollingdownthehill.github.io/main/leg.jpg" style="width:100%">
+<div class="w3-content w3-section" style="max-width:500px">
+   <img src="https://raw.githubusercontent.com/rollingdownthehill/rollingdownthehill.github.io/main/leg.jpg" style="width:100%">
+  <div class="numbertext">Photo Courtesy of Kate</div>
+    <img src="https://raw.githubusercontent.com/rollingdownthehill/rollingdownthehill.github.io/main/man.jpg" style="width:100%">
   <div class="numbertext">Photo Courtesy of Kate</div>
 </div>
 
-</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+  
 <br>
 
 <div class='dot-container' style="text-align:center">
