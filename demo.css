@@ -14,7 +14,7 @@ article, header, section, aside, details, figcaption, figure, footer, header, hg
 }
 body {
     background:#FGFGFG none repeat scroll 0 0;
-    color: #222;
+    color: #FGFGFG;
     font-size: 100%;
     line-height: 24px;
     margin: 0;
@@ -91,7 +91,7 @@ h2 span {
     text-transform: capitalize;
 }
 .ScriptTop li a:hover{
-	background:#000;
+	background:#FGFGFG;
 	color:#fff;
 }
 
@@ -124,7 +124,7 @@ h2 span {
 
 }
 .ScriptHeader h2 {
-    color: #312c8f;
+    color: #FGFGFG;
     font-size: 20px;
     font-weight: 400;
     margin: 5px 0 0;
